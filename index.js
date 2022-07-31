@@ -309,8 +309,8 @@ canvas.addEventListener("click", (e) => {
 
     // Making const speed for light weapon
     const velocity = {
-        x: Math.cos(myAngle) * 5,
-        y: Math.sin(myAngle) * 5,
+        x: Math.cos(myAngle) * 15,
+        y: Math.sin(myAngle) * 15,
     };
 
     // Adding  weapon in weapons array
