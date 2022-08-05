@@ -116,12 +116,15 @@ form>input:hover {
 
 #typing-demo {
     width: 23ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(23), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 2em;
+    padding-top: 2vw;
+    letter-spacing: .08em;
+    margin: 0 auto;
 }
 
 @keyframes typing {
@@ -138,8 +141,10 @@ form>input:hover {
 
 /*popup  */
 .container {
-    height: 60vh;
-    width: 20vw;
+    height: auto;
+    max-height: 60vh;
+    width: auto;
+    max-width: 30vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -173,6 +178,73 @@ form>input:hover {
 }
 .container>button:hover
 {
-    background-color: rgb(146, 59, 148);
     box-shadow: 0 0 10px white;
+}
+
+.fa-heart
+{
+    font-size:48px;
+    color:red;
+
+}
+/* Media Query */
+
+/* For 1024 Resolution */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .container {
+            height: auto;
+            max-height: 50vh;
+            width: auto;
+            max-width: 40vw;
+        }
+    
+        .container p {
+            font-size: 2vw;
+        }
+    
+        .container>button {
+    
+            width: 30vw;
+    
+        }
+    
+        .fa {
+            font-size: 28px;
+        }
+    
+        #typing-demo {
+            padding-top: 2vh;
+            margin: 0 auto;
+        }
+    
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+        .container {
+            height: auto;
+            width: auto;
+           max-height: 50vh;
+           max-width: 50vw;
+        }
+        .container p {
+            font-size: 4vw;
+        }
+        .container>button {
+
+            width: 40vw;
+            
+        }
+        .fa
+        {
+            font-size: 28px;
+        }
+        #typing-demo
+        {
+            padding-top: 5vh;
+            letter-spacing: 0;
+            margin: 0 auto;
+            
+        }
 }
