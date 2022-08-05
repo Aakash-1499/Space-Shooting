@@ -2,6 +2,8 @@
 
 Hi!  my first html canvas **game**, I have created this using vanilla JavaScript 
 
+ **Link** -https://2dspace-shooter.netlify.app/
+
 You can see the **Control** and **Rules** below
 
 
